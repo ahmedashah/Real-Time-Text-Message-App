@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController3">
+   <children>
+      <TextField fx:id="textField" />
+      <HBox prefHeight="84.0" prefWidth="500.0">
+         <children>
+            <Button fx:id="sendButton" mnemonicParsing="false" onAction="#sendButtonClicked" text="Send">
+               <font>
+                  <Font name="Georgia" size="13.0" />
+               </font>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To send messages to all clients, type all below. To send a message to one client, type their number below. To send to mulitple clients, type their number below seperated by a comma" textAlignment="CENTER" wrappingWidth="443.21630859375">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <TextField fx:id="textField2" prefHeight="64.0" prefWidth="500.0" />
+      <ListView fx:id="listView" prefHeight="225.0" prefWidth="500.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Clients Connected" textAlignment="CENTER" wrappingWidth="500.21630859375">
+         <font>
+            <Font name="Georgia" size="13.0" />
+         </font>
+      </Text>
+      <HBox prefHeight="36.0" prefWidth="500.0" />
+      <ListView fx:id="clientListView" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</VBox>

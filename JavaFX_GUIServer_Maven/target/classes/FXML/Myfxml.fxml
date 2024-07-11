@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
+   <left>
+      <Button fx:id="serverButton" mnemonicParsing="false" onAction="#serverButtonClick" text="Server" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Georgia" size="23.0" />
+         </font>
+      </Button>
+   </left>
+   <right>
+      <Button fx:id="clientButton" mnemonicParsing="false" onAction="#clientButtonClick" text="Client" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Georgia" size="23.0" />
+         </font>
+      </Button>
+   </right>
+</BorderPane>
